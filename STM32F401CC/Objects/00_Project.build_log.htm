@@ -1,0 +1,459 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mazen Atta, NTI, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Mazen.Atta\OneDrive\Desktop\NTI Automotive\STM32F401CC\00_Project.uvprojx
+Project File Date:  09/29/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f401xc.s...
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC_Cfg.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+1 warning generated.
+compiling RCC_Cfg.c...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Cfg.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+1 warning generated.
+compiling GPIO_Cfg.c...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Cfg.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+1 warning generated.
+compiling STK_Cfg.c...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(3): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(13): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Cfg.h(18): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_CFG_H*/
+                        ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(3): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(14): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Prv.h(15): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Prv.h(29): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Prv.h(39): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Prv.h(49): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK_Prv.h(71): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_PRV_H*/
+                        ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(3): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(18): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStart();
+                 ^
+                  void
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(19): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStop();
+                ^
+                 void
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(20): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_H*/
+                    ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(31): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStart()
+                 ^
+                  void
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(31): warning: no previous prototype for function 'STK_VidStart' [-Wmissing-prototypes]
+void STK_VidStart()
+     ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(18): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void STK_VidStart();
+     ^
+                  void
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(35): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStop()
+                ^
+                 void
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.c(35): warning: no previous prototype for function 'STK_VidStop' [-Wmissing-prototypes]
+void STK_VidStop()
+     ^
+../Drivers/STM32F401CC/00_MCAL/02_SYSTIC/STK.h(19): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void STK_VidStop();
+     ^
+                 void
+13 warnings generated.
+compiling STK.c...
+compiling system_stm32f4xx.c...
+../Drivers/STM32F401CC/03_APP/main.c(1): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(14): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC_Prv.h(16): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC_Prv.h(39): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC_Prv.h(56): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/main.c(1): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(94): warning: 'APB1_SPI2EN' macro redefined [-Wmacro-redefined]
+#define APB1_SPI2EN   15
+        ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(93): note: previous definition is here
+#define APB1_SPI2EN   14
+        ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(97): warning: 'APB1_I2C1EN' macro redefined [-Wmacro-redefined]
+#define APB1_I2C1EN   22
+        ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(96): note: previous definition is here
+#define APB1_I2C1EN   21
+        ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(98): warning: 'APB1_I2C1EN' macro redefined [-Wmacro-redefined]
+#define APB1_I2C1EN   23              
+        ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/00_RCC/RCC.h(97): note: previous definition is here
+#define APB1_I2C1EN   22
+        ^
+../Drivers/STM32F401CC/03_APP/main.c(2): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK.h(13): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Cfg.h(18): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_CFG_H*/
+                        ^
+../Drivers/STM32F401CC/03_APP/main.c(2): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK.h(14): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Prv.h(15): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Prv.h(29): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Prv.h(39): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Prv.h(49): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK_Prv.h(71): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_PRV_H*/
+                        ^
+../Drivers/STM32F401CC/03_APP/main.c(2): warning: In file included from...
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK.h(18): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStart();
+                 ^
+                  void
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK.h(19): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void STK_VidStop();
+                ^
+                 void
+../Drivers/STM32F401CC/03_APP/../00_MCAL/02_SYSTIC/STK.h(20): warning: no newline at end of file [-Wnewline-eof]
+#endif /*SYSTICK_H*/
+                    ^
+15 warnings generated.
+compiling main.c...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(2): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.h(13): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Cfg.h(16): warning: no newline at end of file [-Wnewline-eof]
+#endif /*GPIO_CFG_H*/
+                     ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(2): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.h(14): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(37): warning: no newline at end of file [-Wnewline-eof]
+#endif /*GPIO_PRV_H*/
+                     ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(2): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.h(209): warning: no newline at end of file [-Wnewline-eof]
+#endif /*GPIO_H*/
+                 ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(30): note: expanded from macro 'GPIOA'
+#define GPIOA ((volatile GPIOx_t *)0x40020000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                       ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(31): note: expanded from macro 'GPIOB'
+#define GPIOB ((volatile GPIOx_t *)0x40020400)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                              ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(32): note: expanded from macro 'GPIOC'
+#define GPIOC ((volatile GPIOx_t *)0x40020800)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                     ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(33): note: expanded from macro 'GPIOD'
+#define GPIOD ((volatile GPIOx_t *)0x40020C00)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                            ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(8): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                                   ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(40): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(61): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(76): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(30): note: expanded from macro 'GPIOA'
+#define GPIOA ((volatile GPIOx_t *)0x40020000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                       ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(31): note: expanded from macro 'GPIOB'
+#define GPIOB ((volatile GPIOx_t *)0x40020400)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                              ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(32): note: expanded from macro 'GPIOC'
+#define GPIOC ((volatile GPIOx_t *)0x40020800)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                     ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(33): note: expanded from macro 'GPIOD'
+#define GPIOD ((volatile GPIOx_t *)0x40020C00)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                            ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(85): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                                   ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(95): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(30): note: expanded from macro 'GPIOA'
+#define GPIOA ((volatile GPIOx_t *)0x40020000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                       ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(31): note: expanded from macro 'GPIOB'
+#define GPIOB ((volatile GPIOx_t *)0x40020400)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                              ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(32): note: expanded from macro 'GPIOC'
+#define GPIOC ((volatile GPIOx_t *)0x40020800)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                     ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(33): note: expanded from macro 'GPIOD'
+#define GPIOD ((volatile GPIOx_t *)0x40020C00)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                            ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(104): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                                   ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(114): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(30): note: expanded from macro 'GPIOA'
+#define GPIOA ((volatile GPIOx_t *)0x40020000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                       ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(31): note: expanded from macro 'GPIOB'
+#define GPIOB ((volatile GPIOx_t *)0x40020400)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                              ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(32): note: expanded from macro 'GPIOC'
+#define GPIOC ((volatile GPIOx_t *)0x40020800)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                     ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(33): note: expanded from macro 'GPIOD'
+#define GPIOD ((volatile GPIOx_t *)0x40020C00)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                            ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(123): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                                   ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(30): note: expanded from macro 'GPIOA'
+#define GPIOA ((volatile GPIOx_t *)0x40020000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                       ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(31): note: expanded from macro 'GPIOB'
+#define GPIOB ((volatile GPIOx_t *)0x40020400)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                              ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(32): note: expanded from macro 'GPIOC'
+#define GPIOC ((volatile GPIOx_t *)0x40020800)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                     ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(33): note: expanded from macro 'GPIOD'
+#define GPIOD ((volatile GPIOx_t *)0x40020C00)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                            ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(132): warning: initializing 'GPIOx_t *' with an expression of type 'volatile GPIOx_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    GPIOx_t *Local_PstArr[6] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOE};
+                                                                   ^~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO_Prv.h(34): note: expanded from macro 'GPIOE'
+#define GPIOE ((volatile GPIOx_t *)0x40021000)
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/01_GPIO/GPIO.c(147): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+39 warnings generated.
+compiling GPIO.c...
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(1): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(14): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC_Prv.h(16): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC_Prv.h(39): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC_Prv.h(56): warning: anonymous structs are a C11 extension [-Wc11-extensions]
+    struct
+    ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(1): warning: In file included from...
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(94): warning: 'APB1_SPI2EN' macro redefined [-Wmacro-redefined]
+#define APB1_SPI2EN   15
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(93): note: previous definition is here
+#define APB1_SPI2EN   14
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(97): warning: 'APB1_I2C1EN' macro redefined [-Wmacro-redefined]
+#define APB1_I2C1EN   22
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(96): note: previous definition is here
+#define APB1_I2C1EN   21
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(98): warning: 'APB1_I2C1EN' macro redefined [-Wmacro-redefined]
+#define APB1_I2C1EN   23              
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.h(97): note: previous definition is here
+#define APB1_I2C1EN   22
+        ^
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(267): warning: implicit truncation from 'int' to bit-field changes value from -13 to 3 [-Wbitfield-constant-conversion]
+            RCC->CFGR.PPRE2 = ~BUS_NOTDIVIDED;
+                            ^ ~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(283): warning: implicit truncation from 'int' to bit-field changes value from -13 to 3 [-Wbitfield-constant-conversion]
+            RCC->CFGR.PPRE1 = ~BUS_NOTDIVIDED;
+                            ^ ~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(299): warning: implicit truncation from 'int' to bit-field changes value from -13 to 3 [-Wbitfield-constant-conversion]
+            RCC->CFGR.HPRE = ~BUS_NOTDIVIDED;
+                           ^ ~~~~~~~~~~~~~~~
+../Drivers/STM32F401CC/00_MCAL/00_RCC/RCC.c(311): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+10 warnings generated.
+compiling RCC.c...
+linking...
+Program Size: Code=492 RO-data=420 RW-data=0 ZI-data=1632  
+".\Objects\00_Project.axf" - 0 Error(s), 80 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Mazen.Atta/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Mazen.Atta/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F401xx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xc.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
