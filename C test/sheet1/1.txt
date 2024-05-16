@@ -1,0 +1,319 @@
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    unsigned int num1 = 0, num2 = 0, min = 0, max = 0, sum = 0;
+    printf("please enter the first number\n");
+    scanf("%d", &num1);
+    printf("please enter the second number\n");
+    scanf("%d", &num2);
+
+    if (num1 > num2)
+    {
+        max = num1;
+        min = num2;
+    }
+    if (num1 < num2)
+    {
+        max = num2;
+        min = num1;
+    }
+
+    for (min = min + 1; min < max; min++)
+    {
+        sum = sum + min;
+    }
+    printf("the sum of the numbers is %d", sum);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int c = 0, i = 0, num = 0, min = 0xFFFFFFFF, max = 0;
+    printf("please enter the no of numbers \n");
+    scanf("%d", &c);
+    for (i; i < c; i++)
+    {
+        printf("enter the %d \n", i + 1);
+        scanf("%d", &num);
+
+        if (num > max)
+        {
+            max = num;
+        }
+        if (num < min)
+        {
+            min = num;
+        }
+    }
+    printf(" the max number is %d \n", max);
+    printf(" the min number is %d \n", min);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int c = 0, i = 0, num = 0, sum = 0;
+    printf("please enter the no of numbers \n");
+    scanf("%d", &c);
+    for (i; i < c; i++)
+    {
+        printf("please enter the %d number \n", i + 1);
+
+        scanf("%d", &num);
+        sum = sum + num;
+    }
+    printf("the sum is %d \n", sum);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i = 0, num1 = 0, num2 = 0, res = 0;
+    printf("please enter the first number \n");
+    scanf("%d", &num1);
+    printf("please enter the second number \n");
+    scanf("%d", &num2);
+
+    for (i; i < num2; i++)
+    {
+        res = res + num1;
+    }
+    printf("the multiplication result equals %d \n", res);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    signed int i = 0, num1 = 0, num2 = 0, rem = 0;
+    printf("please enter the first number \n");
+    scanf("%d", &num1);
+    printf("please enter the second number \n");
+    scanf("%d", &num2);
+    
+    if (num1 == 0)
+    {
+        i = 1;
+        printf("the reminder equals 0 \n");
+    }
+    if (num2 == 0)
+    {
+        i = 1;
+        printf("undefined");
+    }
+    while (i == 0)
+    {
+        num1 = num1 - num2;
+        if (num1 <= 0)
+        {
+            rem = num1 + num2;
+            i = 1;
+        }
+    }
+    if (num1 != 0 && num2 != 0)
+    {
+        printf("the reminder equals %d \n", rem);
+    }
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    signed int i = 1, num = 0, power = 0, res = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+    res = num;
+    printf("please enter the power \n");
+    scanf("%d", &power);
+
+    for (i; i < power; i++)
+    {
+        res = res * num;
+    }
+
+    printf("the result is %d \n", res);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+     int i = 1, num = 0, fac = 1;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    if (num < 0)
+    {
+        printf("please enter a positive number \n");
+    }
+    else
+    {
+        for (i; i <= num; i++)
+        {
+            fac = fac * i;
+        }
+
+        printf("the result is %d \n", fac);
+    }
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i, num = 0, rem = 0, flag = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    for (i=2  ; i < num && flag == 0; i++)
+    {
+        rem = num % i;
+        if (rem == 0)
+        {
+            flag = 1;
+            printf("number %d isnt a prime",num);
+        }
+    
+    }
+     if (flag == 0)
+        {
+            printf("number %d is a prime", num);
+        }
+
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i = 0, num = 0, check = 0, flag = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    for (i; i < num && flag == 0; i++)
+    {
+        check = i * i;
+        if (check == num)
+        {
+            printf("the number is a perfect square of %d", i);
+            flag = 1;
+        }
+    }
+    if (flag == 0)
+    {
+        printf("the number isnt a perfect square ");
+    }
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i = 0, num = 0, check = 1, flag = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    for (i; i < num && flag == 0; i++)
+    {
+        check = check * 2;
+        if (check == num)
+        {
+            printf("the number %d is a base of 2", num);
+            flag = 1;
+        }
+        if (check > num)
+        {
+            printf("the number %d isnt a base of 2", num);
+
+            flag = 1;
+        }
+    }
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i = 0, num = 0, check = 1, flag = 0, rem = 0, sum = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    while (num > 0)
+    {
+        rem = num % 10;
+        num = num / 10;
+        sum = sum + rem;
+    }
+    printf("the sum equals = %d ", sum);
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int num = 0, flag = 0, rem = 0, sum = 0;
+    while (flag < 2)
+    {
+
+        printf("please enter the number \n");
+        scanf("%d", &num);
+        rem = num % 2;
+        if (rem == 0)
+        {
+            sum = sum + num;
+            printf("the sum equals= %d \n", sum);
+        }
+        else if (rem != 0)
+        {
+            flag++;
+        }
+        if (flag == 2)
+        {
+            printf("bye bitch\n");
+        }
+    }
+}
+/*************************************************************************************************************************\
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{
+    int i = 0, num = 0, check = 1, flag = 0, rem = 0, sum = 0;
+    printf("please enter the number \n");
+    scanf("%d", &num);
+
+    while (num > 0)
+    {
+        rem = num % 10;
+        num = num / 10;
+        if (rem == 8)
+        {
+            sum = sum + 2;
+        }
+        if (rem == 0 || rem == 4 || rem == 6)
+        {
+            sum = sum + 1;
+        }
+    }
+    printf("the sum equals = %d ", sum);
+}
+/*************************************************************************************************************************\
